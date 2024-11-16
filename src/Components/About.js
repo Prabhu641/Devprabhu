@@ -4,7 +4,7 @@ import '../styless.css';
 function ABOUT() {
     return (
         
-       <div className="container m-5 ">
+       <div className="container d-flex mt-5 ">
         <div className="row">
             <div className="col col-12 col-md-6 ">
                 <img src="./dev.webp" alt="prabu" className="img3 img-fluid rounded-circle"/>
