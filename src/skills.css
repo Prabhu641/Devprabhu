@@ -1,88 +1,82 @@
-
 .skills-page {
-  
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #1e1e2f;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-
-.header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
+.header h3 {
+    font-size: 2rem;
 }
-
-.header p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-
-
-
 
 .skills-category {
-    background-color:black;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0px 10px whitesmoke;
+    margin-bottom: 30px;
 }
-
-
-.skills-category h3 {
-    font-size: 1.8rem;
-    color: whitesmoke;
-    margin-bottom: 20px;
-}
-
 
 .skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    justify-content:center;
+  
 }
 
 
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.skill-card {
+    background-color: #2a2a37;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 2px;
     text-align: center;
-    width: 120px;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width:20%;
+ 
 }
+
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+}
+
 
 .skill-icon {
     width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    object-fit: contain;
+ 
+    height: auto;
+
 }
+
 
 .skill-name {
-    font-size: 1rem;
-    font-weight: bold;
-    color: whitesmoke;
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+  
 }
-
 
 
 @media (max-width: 768px) {
-    .skills-list {
-        flex-direction: column;
-        align-items: center;
+    .skill-card {
+        width: 45%;
+  
+        margin: 10px auto;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        width: 100%;
+    
+        margin: 10px auto;
+
+        padding: 15px;
+      
     }
 
-    .skill-item {
-        width: 100px;
+    .header h3 {
+        font-size: 1.5rem;
+    
     }
 }

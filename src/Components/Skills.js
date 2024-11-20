@@ -4,36 +4,36 @@ import '../skills.css';
 function Skills() {
     return (
         <div className="skills-page">
-            <div className="header">
-                <h3 className='text-white'>My Technical <span  className='text-info'>Skills</span></h3>
-                <p>Technologies I work with and have hands-on experience with.</p>
+            <div className="header text-center mb-5">
+                <h3 className='text-white'>My Technical <span className='text-info'>Skills</span></h3>
+                <p className="text-secondary">Technologies I work with and have hands-on experience with.</p>
             </div>
 
             <div className="skills-container">
                 {/* Frontend Skills */}
                 <div className="skills-category">
-                    <h3>Frontend Technologies</h3>
-                    <ul className="skills-list">
-                        {['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'TypeScript'].map((skill) => (
-                            <li className="skill-item" key={skill}>
+                    <h3 className="text-white">Frontend Technologies</h3>
+                    <div className="skills-list">
+                        {['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'TypeScript','jquery'].map((skill) => (
+                            <div className="skill-card" key={skill}>
                                 <img src={`./${skill.toLowerCase()}.png`} alt={skill} className="skill-icon" />
                                 <span className="skill-name">{skill}</span>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
 
                 {/* Backend Skills */}
-                <div className="skills-category">
-                    <h3>Backend Technologies</h3>
-                    <ul className="skills-list">
+                <div className="skills-category mt-4">
+                    <h3 className="text-white">Backend Technologies</h3>
+                    <div className="skills-list">
                         {['Nodejs', 'Express', 'MongoDB', 'Python', 'Django'].map((skill) => (
-                            <li className="skill-item" key={skill}>
+                            <div className="skill-card" key={skill}>
                                 <img src={`./${skill.toLowerCase()}.png`} alt={skill} className="skill-icon" />
                                 <span className="skill-name">{skill}</span>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
