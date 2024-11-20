@@ -6,7 +6,7 @@ function Skills() {
         <div className="skills-page">
             <div className="header text-center mb-5">
                 <h3 className='text-white'>My Technical <span className='text-info'>Skills</span></h3>
-                <p className="text-secondary">Technologies I work with and have hands-on experience with.</p>
+                <p className="text-secondary">Technologies I have experience in.</p>
             </div>
 
             <div className="skills-container">
