@@ -520,6 +520,15 @@ left: 0;
     color: whitesmoke;
 }
 
+@media(max-width:480px)
+{
+   .contact-section input{
+    width: 100%;
+   }
+    .contact-section{
+        width: 100%;
+    }
+}
 
 
 @media (max-width: 768px) {

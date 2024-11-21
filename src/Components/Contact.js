@@ -27,15 +27,15 @@ export const Contact = () => {
             <h2 className="text-center text-white mb-4">Find <span className='text-info'>Out Me</span></h2>
             <div className="info-item d-flex align-items-center mb-3">
               <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="text-info mr-2" />
-              <span className="text-white">1234 Elm Street, Springfield, IL</span>
+              <span className="text-white mx-2">28,5th Street,Anbunagar,Aruppukottai.</span>
             </div>
             <div className="info-item d-flex align-items-center mb-3">
               <FontAwesomeIcon icon={faPhoneAlt} size="2x" className="text-info mr-2" />
-              <span className="text-white">(123) 456-7890</span>
+              <span className="text-white mx-2">9080879678</span>
             </div>
             <div className="info-item d-flex align-items-center mb-3">
               <FontAwesomeIcon icon={faEnvelope} size="2x" className="text-info mr-2" />
-              <span className="text-white">contact@example.com</span>
+              <span className="text-white mx-2">prabhurprabhur063@gmail.com</span>
             </div>
           </div>
         </div>

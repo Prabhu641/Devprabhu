@@ -19,7 +19,7 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center float-end">
                         <li className="nav-item">
                             <Link className="nav-link active text-white" aria-current="page" to="/">Home</Link>
                         </li>
