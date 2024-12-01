@@ -55,7 +55,7 @@ function HOME() {
                         <button className="btn btn-outline-secondary mx-2" onClick={handleDownloadCVClick}>Download CV</button>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 text-center">
+                <div className="col-12 col-md-6 ">
                     <img 
                         src="./dev.webp" 
                         className="img-fluid img1 rounded-circle" 

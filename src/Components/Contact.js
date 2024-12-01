@@ -24,7 +24,7 @@ export const Contact = () => {
             </div>
              <div className="col col-md-6">
           <div className="more-info m-5">
-            <h2 className="text-center text-white mb-4">Find <span className='text-info'>Out Me</span></h2>
+            <h2 className="text-center text-white mb-4">Find out <span className='text-info'> me</span></h2>
             <div className="info-item d-flex align-items-center mb-3">
               <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="text-info mr-2" />
               <span className="text-white mx-2">28,5th Street,Anbunagar,Aruppukottai.</span>

@@ -118,7 +118,7 @@ left: 0;
     text-align: justify;
 }
 
-@keyframes move {
+/* @keyframes move {
     0% {
         transform: translateY(-10px);
     }
@@ -130,7 +130,7 @@ left: 0;
     100% {
         transform: translateY(-10px);
     }
-}
+} */
 
 .h1,
 .h2 {
