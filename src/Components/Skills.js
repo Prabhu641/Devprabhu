@@ -6,7 +6,8 @@ function Skills() {
         <div className="skills-page">
             <div className="header text-center mb-5">
                 <h3 className='text-white'>Technical <span className='text-info'>Skills</span></h3>
-                <h1>Tools</h1>
+              
+              
        
             </div>
 
