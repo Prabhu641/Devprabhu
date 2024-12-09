@@ -23,8 +23,8 @@ function HOME() {
 
     return (
         <div className="container m-5 p-5">
-            <div className="row">
-                {/* Left Column */}
+            <div className="row g-5">
+             
                 <div className="col-12 col-md-6">
                     <h1 className="h1">Hi, I'm Prabhu!</h1>
                     <h2 className="h2">Front-End Developer</h2>
@@ -72,7 +72,7 @@ function HOME() {
                 </div>
 
                 {/* Right Column */}
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 ">
                     <img
                         src="./dev.webp"
                         className="img-fluid img1 rounded-circle"
