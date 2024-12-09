@@ -104,10 +104,8 @@ left: 0;
     color: rgba(241, 224, 224, 0.612);
 }
 
-.img1 {
-    width: 340px;
-    margin-top: -20px;
-    animation: move 3s ease-in-out infinite;
+.img1{
+    width: 60%;
 }
 
 .img3 {
