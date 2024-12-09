@@ -22,7 +22,7 @@ function HOME() {
     };
 
     return (
-        <div className="container m-5 p-5 d-flex justify-content-center align-items-center">
+        <div className="container m-5 p-5 ">
             <div className="row g-5">
              
                 <div className="col-12 col-md-6">
