@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 import "../styless.css";
 
 function HOME() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
+    }, []);
+
     const handleHireMeClick = () => {
         alert("Thanks for considering me!");
         setTimeout(() => {
@@ -10,22 +19,23 @@ function HOME() {
     };
 
     const handleDownloadCVClick = () => {
-        alert("CV is downloading")
-          setTimeout(() => {
+        alert("CV is downloading");
+        setTimeout(() => {
             const fileUrl = "/assets/Prabhu_CV.pdf";
             const link = document.createElement("a");
             link.href = fileUrl;
-            link.download = "Prabhu_CV.pdf"; 
+            link.download = "Prabhu_CV.pdf";
             link.click();
         }, 2000);
-       
     };
 
     return (
-        <div className="container m-5 p-5 ">
+        <div className="container conts m-5 p-5 ">
             <div className="row g-5">
-             
-                <div className="col-12 col-md-6">
+                <div
+                    className="col-12 col-md-6"
+                    data-aos="fade-right"
+                >
                     <h1 className="h1">Hi, I'm Prabhu!</h1>
                     <h2 className="h2">Front-End Developer</h2>
                     <p className="p text-secondary">
@@ -62,7 +72,7 @@ function HOME() {
                         >
                             Hire Me
                         </button>
-                          <button
+                        <button
                             className="btn btn-outline-secondary mx-2"
                             onClick={handleDownloadCVClick}
                         >
@@ -72,7 +82,10 @@ function HOME() {
                 </div>
 
                 {/* Right Column */}
-                <div className="col-12 col-md-6 ">
+                <div
+                    className="col-12 col-md-6"
+                    data-aos="fade-left" // AOS Animation
+                >
                     <img
                         src="./dev.webp"
                         className="img-fluid img1 rounded-circle"

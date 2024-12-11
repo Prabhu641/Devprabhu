@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 import '../styless.css';
 
 function ABOUT() {
+
+      useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
+    }, []);
+
     return (
         
        <div className="container d-flex mt-5 ">
         <div className="row">
-            <div className="col col-12 col-md-6 ">
+            <div className="col col-12 col-md-6 " data-aos="fade-right">
                 <img src="./dev.webp" alt="prabu" className="img3 img-fluid rounded-circle"/>
             </div>
-             <div className="col col-12 col-md-6">
+            <div className="col col-12 col-md-6 " data-aos="fade-left">
+
                     <h1 className="h3 text-center head">About <span className="text-info ">Me</span></h1>
                     <p className="p1 text-secondary">
                         Hi! I’m Prabhu, an aspiring Front-End Developer with a passion for crafting engaging and user-friendly web experiences. My journey into web development began with a curiosity about how websites work, and it has grown into a deep love for building interactive applications.

@@ -37,6 +37,24 @@
  
 }
 
+/* .skill-card::after{
+    position: absolute;
+    content: '';
+    width: 14%;
+    height: 0px;
+    left: 0%;
+    bottom: 0%;
+    background-color: blue;
+    transition: all 1s;
+
+
+}
+.skill-card:hover::after{
+    height: 4px;
+    
+
+    
+} */
 
 .skill-card:hover {
     transform: translateY(-5px);

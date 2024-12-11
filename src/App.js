@@ -10,7 +10,7 @@ import { Project } from './Components/Project';
 
 function App() {
     return (
-        <div className='app'>
+        <>
             <Navbar />
             
               <Routes>
@@ -22,7 +22,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
           
-        </div>
+        </>
     );
 }
 
