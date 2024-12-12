@@ -7,7 +7,8 @@ function HOME() {
     useEffect(() => {
         AOS.init({
             duration: 1000, 
-            once: true, 
+            once: true,
+           
         });
     }, []);
 
@@ -84,7 +85,7 @@ function HOME() {
                 {/* Right Column */}
                 <div
                     className="col-12 col-md-6"
-                    data-aos="fade-left" // AOS Animation
+                    data-aos="fade-left"
                 >
                     <img
                         src="./dev.webp"
