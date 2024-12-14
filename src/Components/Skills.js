@@ -11,7 +11,7 @@ function Skills() {
         });
     }, []);
 
-    // Array of skills with image sources
+   
     const skills = [
         { name: 'HTML', img: './html.png' },
         { name: 'CSS', img: './css.png' },
