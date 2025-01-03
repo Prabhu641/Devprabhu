@@ -10,6 +10,7 @@ const Footer = () => {
         <hr/>
         <footer className="footer">
             <div className="footer-links">
+             <span>© DevPrabhu 2024. All rights reserved.</span>
                 <Link className="footer-link" to="/">
                     <i className="fas fa-home"></i> Home
                 </Link>
