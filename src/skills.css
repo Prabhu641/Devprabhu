@@ -21,11 +21,10 @@
 
 .skill-card {
     position: relative;
-    /* Add this to position the ::after element relative to the card */
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.137);
     border-radius: 8px;
     padding: 20px;
-    /* Adjust padding for better spacing */
+
     margin: 8px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
