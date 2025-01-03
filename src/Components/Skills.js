@@ -30,7 +30,7 @@ function Skills() {
     return (
         <div className="skills-page" data-aos="fade-right">
             <div className="header text-center mb-5">
-                <h3 className='text-white'>Technical <span className='text-info'>Skills</span></h3>
+                <h3 className='text-dark'>Technical <span className='text-info'>Skills</span></h3>
             </div>
 
             <div className="skills-containers">

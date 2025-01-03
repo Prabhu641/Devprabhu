@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"; 
 import AOS from "aos";
-import "../styless.css";
+import "../home.css"; // Make sure to modify your styles in this file
 
 function HOME() {
     useEffect(() => {
         AOS.init({
             duration: 1000, 
             once: true,
-           
         });
     }, []);
 
@@ -31,50 +30,48 @@ function HOME() {
     };
 
     return (
-        <div className="container conts m-5 p-5 ">
-            <div className="row g-5">
-                <div
-                    className="col-12 col-md-6"
-                    data-aos="fade-right"
-                >
-                    <h1 className="h1">Hi, I'm Prabhu!</h1>
-                    <h2 className="h2">Front-End Developer</h2>
-                    <p className="p text-secondary">
+        <div className="home-container">
+            <div className="home-content">
+                <div className="text-section" data-aos="fade-right">
+                    <h1 className="name">Hi, I'm Prabhu!</h1>
+                    <h2 className="role">Front-End Developer</h2>
+                    <p className="intro-text">
                         Passionate about crafting responsive web applications.
-                        <br />
                     </p>
-
+                    
                     {/* Social Links */}
-                    <div className="links mb-3">
+                    <div className="social-links">
                         <a
                             href="https://www.linkedin.com/in/prabhudeveloper/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="social-icon"
                         >
-                            <i className="fab fa-linkedin fa-2x mx-2 fab1"></i>
+                            <i className="fab fa-linkedin"></i>
                         </a>
                         <a
                             href="https://github.com/Prabhu641"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="social-icon"
                         >
-                            <i className="fab fa-github fa-2x mx-2 fab1"></i>
+                            <i className="fab fa-github"></i>
                         </a>
-                        <a href="mailto:prabhurprabhur063@gmail.com">
-                            <i className="fas fa-envelope fa-2x mx-2"></i>
+                        <a href="mailto:prabhurprabhur063@gmail.com" className="social-icon">
+                            <i className="fas fa-envelope"></i>
                         </a>
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="d-flex">
+                    <div className="action-buttons">
                         <button
-                            className="btn btn-outline-primary"
+                            className="btn btn-hire"
                             onClick={handleHireMeClick}
                         >
                             Hire Me
                         </button>
                         <button
-                            className="btn btn-outline-secondary mx-2"
+                            className="btn btn-cv"
                             onClick={handleDownloadCVClick}
                         >
                             Download CV
@@ -82,14 +79,11 @@ function HOME() {
                     </div>
                 </div>
 
-                {/* Right Column */}
-                <div
-                    className="col-12 col-md-6"
-                    data-aos="fade-left"
-                >
+                {/* Right Column with Image */}
+                <div className="image-section" data-aos="fade-left">
                     <img
                         src="./dev.webp"
-                        className="img-fluid img1 rounded-circle"
+                        className="profile-image"
                         alt="Prabhu"
                     />
                 </div>

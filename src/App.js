@@ -7,43 +7,35 @@ import { Contact } from './Components/Contact';
 import { Certifcates } from './Components/Certifcates';
 import Skills from './Components/Skills';
 import { Project } from './Components/Project';
-import LoadingScreen from 'react-loading-screen';
+import LoadingScreen from './Components/LoadingScreen';  // Import LoadingScreen
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-
+        // Set a timer to simulate loading (you can replace this with actual loading logic)
         const timer = setTimeout(() => {
-            setIsLoading(false);
+            setIsLoading(false);  // After 2 seconds, stop the loading state
         }, 2000);
 
-        return () => clearTimeout(timer); 
+        return () => clearTimeout(timer);  // Clear the timer on component unmount
     }, []);
 
     return (
         <>
             <Navbar />
-            
-            <LoadingScreen
-                loading={isLoading}
-                bgColor='#000000'
-                spinnerColor='#ffffff'
-                textColor='#676767'
-                text='DevPrabhu is Loading...'
-            >
-               
-                {!isLoading && (
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/skills" element={<Skills />} />
-                        <Route path="/project" element={<Project />} />
-                        <Route path="/certificates" element={<Certifcates />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                )}
-            </LoadingScreen>
+            {isLoading ? (
+                <LoadingScreen />  // Show the loader if still loading
+            ) : (
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/project" element={<Project />} />
+                    <Route path="/certificates" element={<Certifcates />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            )}
         </>
     );
 }

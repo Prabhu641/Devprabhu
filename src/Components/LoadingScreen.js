@@ -1,11 +1,15 @@
 import React from 'react';
 
-
 const LoadingScreen = () => {
     return (
-        <div className="loading-screen">
-            <div className="loader"></div>
-            <h1>Loading DevPrabhu...</h1>
+        <div className="d-flex justify-content-center align-items-center min-vh-100  text-white">
+            <div className="text-center">
+                <div className="spinner-border " role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+
+                <h1 className="mt-4">Loading DevPrabhu...</h1>
+            </div>
         </div>
     );
 };
