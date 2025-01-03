@@ -7,25 +7,27 @@ import { Contact } from './Components/Contact';
 import { Certifcates } from './Components/Certifcates';
 import Skills from './Components/Skills';
 import { Project } from './Components/Project';
-import LoadingScreen from './Components/LoadingScreen';  // Import LoadingScreen
+import LoadingScreen from './Components/LoadingScreen';  
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Set a timer to simulate loading (you can replace this with actual loading logic)
+    
         const timer = setTimeout(() => {
-            setIsLoading(false);  // After 2 seconds, stop the loading state
+            setIsLoading(false);  
         }, 2000);
 
-        return () => clearTimeout(timer);  // Clear the timer on component unmount
+        return () => clearTimeout(timer);  
     }, []);
 
     return (
         <>
-            <Navbar />
+            {/* Conditionally render the Navbar only after loading is complete */}
+            {!isLoading && <Navbar />}
+            
             {isLoading ? (
-                <LoadingScreen />  // Show the loader if still loading
+                <LoadingScreen />  // Show the LoadingScreen while loading
             ) : (
                 <Routes>
                     <Route path="/" element={<Home />} />

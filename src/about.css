@@ -1,14 +1,9 @@
-/* General styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
 .container {
@@ -62,7 +57,7 @@ body {
 
 .p1 {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #555;
     text-align: justify;
     margin-bottom: 30px;
