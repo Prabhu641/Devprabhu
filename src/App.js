@@ -14,7 +14,6 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-    
         const timer = setTimeout(() => {
             setIsLoading(false);  
         }, 2000);
@@ -24,7 +23,7 @@ function App() {
 
     return (
         <>
-            {/* Conditionally render the Navbar only after loading is complete */}
+            {/* Conditionally render the Navbar and Footer only after loading is complete */}
             {!isLoading && <Navbar />}
             
             {isLoading ? (
@@ -38,10 +37,10 @@ function App() {
                     <Route path="/certificates" element={<Certifcates />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
-
-                 
             )}
-              <Footer />
+            
+            {/* Conditionally render Footer only after loading is complete */}
+            {!isLoading && <Footer />}
         </>
     );
 }
