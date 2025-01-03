@@ -6,7 +6,7 @@ import "../home.css"; // Make sure to modify your styles in this file
 function HOME() {
     useEffect(() => {
         AOS.init({
-            duration: 1000, 
+            duration: 1200, // slightly longer for smoother effect
             once: true,
         });
     }, []);

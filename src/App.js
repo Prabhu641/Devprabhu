@@ -8,6 +8,7 @@ import { Certifcates } from './Components/Certifcates';
 import Skills from './Components/Skills';
 import { Project } from './Components/Project';
 import LoadingScreen from './Components/LoadingScreen';  
+import Footer from './Components/Footer';
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -37,7 +38,10 @@ function App() {
                     <Route path="/certificates" element={<Certifcates />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+
+                 
             )}
+              <Footer />
         </>
     );
 }
