@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoadingScreen = () => {
     return (
-        <div className="d-flex justify-content-center align-items-center min-vh-100 bg-dark text-white">
+        <div className="d-flex justify-content-center align-items-center min-vh-100 bg-white text-dark">
             <div className="text-center">
             
                 <div className="spinner-border text-info" role="status" style={{ width: '5rem', height: '5rem' }}>
