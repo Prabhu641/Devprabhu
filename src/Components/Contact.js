@@ -14,32 +14,61 @@ export const Contact = () => {
     });
   }, []);
 
+  // Define handleSubmit function
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const name = event.target[0].value;
+    const email = event.target[1].value;
+    const subject = event.target[2].value;
+    const message = event.target[3].value;
+
+    try {
+      const response = await fetch('http://localhost:5000/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        // Optionally clear the form or reset state here
+      } else {
+        alert('Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while sending the message.');
+    }
+  };
+
   return (
     <div className='container m-5'>
       <div className='row'>
-    
         <div className='col col-md-6' data-aos="fade-up" data-aos-delay="200">
-          <div className='con  d-flex flex-column align-items-center'>
+          <div className='con d-flex flex-column align-items-center'>
             <h1 className='h3 text-dark mt-2'>Contact <span className='text-info'>Me</span></h1>
-            <div className='contact-section d-flex flex-column'>
-              <input type='text' placeholder='Enter Your Name' data-aos="zoom-in" />
-              <input type='email' placeholder='Enter Your EmailId' data-aos="zoom-in" />
-              <input type='text' placeholder='Enter Your Subject' data-aos="zoom-in" />
-              <textarea cols={20} rows={5} placeholder='Enter Your Message' data-aos="zoom-in" />
+            <form onSubmit={handleSubmit} className='contact-section d-flex flex-column'>
+              <input type='text' placeholder='Enter Your Name' required data-aos="zoom-in" />
+              <input type='email' placeholder='Enter Your EmailId' required data-aos="zoom-in" />
+              <input type='text' placeholder='Enter Your Subject' required data-aos="zoom-in" />
+              <textarea cols={20} rows={5} placeholder='Enter Your Message' required data-aos="zoom-in" />
               <div className='d-flex justify-content-center m-2'>
-                <button className='btn' data-aos="fade-up" data-aos-delay='20'>Send Message</button>
+                <button type='submit' className='btn' data-aos="fade-up" data-aos-delay='20'>Send Message</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
 
         {/* Right Column with contact info */}
         <div className="col col-md-6" data-aos="fade-left" data-aos-delay="300">
           <div className="more-info m-5">
-            <h2 className="text-center text-dark mb-4">Find out <span className='text-info'> me</span></h2>
+            <h2 className="text-center text-dark mb-4">Find out <span className='text-info'>me</span></h2>
             <div className="info-item d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="500">
               <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="text-info mr-2" />
-              <span className="text-dark mx-2">28,5th Street,Anbunagar,Aruppukottai.</span>
+              <span className="text-dark mx-2">28,5th Street, Anbunagar, Aruppukottai.</span>
             </div>
             <div className="info-item d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="600">
               <FontAwesomeIcon icon={faPhoneAlt} size="2x" className="text-info mr-2" />
