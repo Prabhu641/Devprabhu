@@ -1,6 +1,4 @@
-/* certificates.css */
 
-/* General Section Styling */
 .certificates-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -61,14 +59,12 @@
     font-style: italic;
 }
 
-/* Grid Styling */
 .certificates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .section-title {
         font-size: 2rem;
