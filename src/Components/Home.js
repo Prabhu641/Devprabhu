@@ -24,7 +24,7 @@ function Home() {
     const handleDownloadCV = () => {
         alert("Your CV is now downloading...");
         setTimeout(() => {
-            const fileUrl = "/assets/Prabhu_CV.pdf"; // Make sure the file exists at this location
+            const fileUrl = "/assets/prabhu_resumes.pdf"; // Make sure the file exists at this location
             const link = document.createElement('a');
             link.href = fileUrl;
             link.download = "Prabhu_CV.pdf";
