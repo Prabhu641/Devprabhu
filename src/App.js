@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home'; 
 import About from './Components/About'; 
 import { Contact } from './Components/Contact';
-import { Certifcates } from './Components/Certifcates';
+import Certifcates from './Components/Certificates'
 import Skills from './Components/Skills';
 import { Project } from './Components/Project';
 import LoadingScreen from './Components/LoadingScreen';  
