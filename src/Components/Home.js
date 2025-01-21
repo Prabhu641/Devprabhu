@@ -27,7 +27,7 @@ function Home() {
             const fileUrl = "/assets/prabhu_resumes.pdf"; // Make sure the file exists at this location
             const link = document.createElement('a');
             link.href = fileUrl;
-            link.download = "Prabhu_CV.pdf";
+            link.download = "prabhu_resumes.pdf";
             link.click();
         }, 2000); // Wait before triggering download
     };
