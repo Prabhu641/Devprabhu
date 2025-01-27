@@ -3,13 +3,13 @@ import '../projects.css';
 
 export const Project = () => {
   const projects = [
-    {
-      title: 'E-commerce Website',
-      description: 'A fully responsive e-commerce application built with React and Django.',
-      image: './ecommerce-project.jpg', // Replace with your actual image path
-      liveLink: 'https://example-ecommerce-live.com',
-      githubLink: 'https://github.com/your-username/ecommerce-project',
-    },
+    // {
+    //   title: 'E-commerce Website',
+    //   description: 'A fully responsive e-commerce application built with React and Django.',
+    //   image: './ecommerce-project.jpg', // Replace with your actual image path
+    //   liveLink: 'https://example-ecommerce-live.com',
+    //   githubLink: 'https://github.com/your-username/ecommerce-project',
+    // },
     {
       title: 'Portfolio Website',
       description: 'A personal portfolio to showcase projects, skills, and achievements.',
